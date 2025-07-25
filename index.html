@@ -11,60 +11,68 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #f8f9fa; /* Light grey background */
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #c5e1e5); /* Subtle gradient background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font */
             position: relative; /* Needed for absolute positioning of numbers */
             overflow: hidden; /* Hide any overflowing content */
         }
         .contact-container {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+            padding: 60px; /* Increased padding */
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
             text-align: center;
             animation: fadeIn 1s ease-out;
             z-index: 10; /* Ensure the contact box is above numbers */
+            border: 1px solid #b0bec5; /* Subtle border */
         }
         .contact-container h1 {
-            color: #007bff; /* Bootstrap primary blue */
-            font-size: 2.8em;
+            color: #1976d2; /* A slightly different shade of blue */
+            font-size: 3.5em; /* Larger heading */
             margin-bottom: 20px;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
         }
+        .contact-container h3 {
+            color: #388e3c; /* A different shade of green */
+            font-size: 2em;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
         .contact-container p {
-            color: #6c757d; /* Bootstrap secondary grey */
-            font-size: 1.2em;
+            color: #546e7a; /* A darker shade of grey for better readability */
+            font-size: 1.3em;
+            margin-bottom: 0;
         }
 
         .number-box {
             position: absolute;
-            font-size: 1.5em;
+            font-size: 1.7em; /* Slightly larger subtle numbers */
             font-weight: bold;
-            color: rgba(0, 0, 0, 0.1); /* Very light, subtle color */
+            color: rgba(0, 0, 0, 0.08); /* Even lighter subtle color */
             pointer-events: none; /* Make numbers not clickable */
             z-index: 1; /* Keep numbers behind the main content */
         }
 
         /* Number positions */
         .top-left {
-            top: 20px;
-            left: 20px;
+            top: 30px;
+            left: 30px;
         }
         .top-right {
-            top: 20px;
-            right: 20px;
+            top: 30px;
+            right: 30px;
         }
         .bottom-left {
-            bottom: 20px;
-            left: 20px;
+            bottom: 30px;
+            left: 30px;
         }
         .bottom-right {
-            bottom: 20px;
-            right: 20px;
+            bottom: 30px;
+            right: 30px;
         }
         .center-number {
-            font-size: 5em; /* Larger for the center number */
-            opacity: 0.05; /* Even more subtle */
+            font-size: 6em; /* Larger center number */
+            opacity: 0.03; /* Even more subtle center number */
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); /* Center based on its own size */
@@ -85,8 +93,8 @@
 <body>
     <div class="contact-container">
         <h1>Contact for Developer</h1>
-        <h3>9918179155</h3>
-        <p>We're ready to bring your ideas to life.</p>
+        <h3>9236396499</h3>
+        <p>Reach out to discuss your next project.</p>
     </div>
 
     <div class="number-box top-left">1</div>
